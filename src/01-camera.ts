@@ -1,4 +1,4 @@
-import { Camera, CameraResultType, CameraDirection.Rear } from '@capacitor/camera';
+import { Camera, CameraResultType, CameraDirection } from '@capacitor/camera';
 
 const takePicture = async () => {
   const image = await Camera.getPhoto({
