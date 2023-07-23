@@ -26,7 +26,7 @@ export const addProduct = (data: CreateProductDto): Product => {
 };
 
 export const updateProduct = (
-  id: string,
+  id: Product['id'],
   changes: UpdateProductDto
 ): Product => {
   const index = products.findIndex((item) => item.id === id);
@@ -40,6 +40,6 @@ export const updateProduct = (
 
 export const findProducts = (dto: FindProductDto): Product[] => {
 
-  dto.color = 'blue';
+  // dto.color = 'blue';
   return products;
 };
